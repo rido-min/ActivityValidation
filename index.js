@@ -18,8 +18,9 @@ const act2 = Activity.fromObject(act);
 console.log(act);
 console.log(act.id);
 console.log(act.conversation.id);
+console.log(act.getConversationReference());
 
-console.log('\nact2');
+console.log('\n--act2--\n');
 act2.id = '456';
 delete act2.conversation;
 console.log(act2);
